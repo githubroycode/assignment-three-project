@@ -2,117 +2,237 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
 
-    <!-- font awesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- font : google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <!-- font : google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!-- DaisyUI and Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI and Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind and css configuration -->
-    <script>
+  <!-- tailwind and css configuration -->
+  <script>
 
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'btn-bg-color': '#ABEF5F',
-                        's_color': '#797C7E'
-                    },
-                },
-                fontFamily: {
-                    Poppins: 'Poppins',
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-bg-color': '#ABEF5F',
+            's_color': '#797C7E'
+          },
+        },
+        fontFamily: {
+          Poppins: 'Poppins',
 
-                }
-            }
         }
-    </script>
+      }
+    }
+  </script>
 
 </head>
 
 <body>
-    <!-- Header Section start -->
-     <header class="md:container mx-auto">
-        <nav class="bg-neutral-100">
-            <div class="navbar bg-base-100">
-              <div class="navbar-start">
-                <div class="dropdown">
-                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Home</a></li>
-                    <li class="text-[#797C7E]"><a>Shop</a></li>
-                    <li class="text-[#797C7E]"><a>News</a></li>
-                    <li class="text-[#797C7E]"><a>Contact</a></li>
-                  </ul>
-                </div>
-                <a class="font-bold text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-btn-bg-color px-1 py-1 mx-2 rounded-full"></i>Rinterio</a>
-              </div>
+  <!-- Header Section start -->
+  <header class="md:container mx-auto bg-white">
+    <!-- navbar section -->
+    <nav class="md:flex">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="font-bold text-xl"><i
+              class="fa-solid fa-arrow-right -rotate-45 bg-btn-bg-color px-1 py-1 mx-2 rounded-full"></i>Rinterio</a>
+        </div>
 
-              <div class="navbar-center lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                  <li><a>Home</a></li>
-                    <li><a>Service</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
+        <div class="navbar-center lg:flex hidden">
+          <ul class="menu menu-horizontal px-1 font-bold">
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="px-2 py-2 mx-2 rounded-full font-medium bg-neutral-200"><svg xmlns="http://www.w3.org/2000/svg"
+              fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="size-6 text-black inline">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </button>
+          <button class="px-2 py-2 mx-2 rounded-full font-medium bg-neutral-200"><svg xmlns="http://www.w3.org/2000/svg"
+              fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="size-6 text-black inline">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+          </button>
+
+          <div><a class="btn bg-btn-bg-color text-black font-bold">Book Consult<i
+                class="fa-solid fa-arrow-right -rotate-45"></i></a></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner main section -->
+    <main class="w-screen justify-center items-center  grid md:container">
+      <div>
+        <div class="ml-40">
+          <img src="./assets/banner.png" alt="">
+        </div>
+        <div class="space-y-6">
+          <h1 class="text-center text-5xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+          <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+          <button class="btn bg-green-400 text-black font-bold">View Details<i
+              class="fa-solid fa-arrow-right -rotate-45 bg-btn-bg-color px-1 py-1 mx-2 rounded-full"></i></button>
+        </div>
+      </div>
+    </main>
+  </header>
+  <!-- about us section -->
+  <section class="my-20 bg-slate-100">
+    <div class="mx-8">
+      <div class="relative">
+        <img class="absolute top-4 left-2 w-25 h-10" src="./assets/Vector.png" alt="">
+      </div>
+      <div class=" md:container mx-10">
+
+        <div><a class="btn my-16 bg-white text-black rounded-3xl"><i class="fa-solid fa-arrow-right"></i>About us</a>
+        </div>
+
+        <div class="flex mx-auto">
+          <div class="mx-4">
+            <h1 class="text-5xl font-bold">We design thoughtful,<br>liveable spaces</h1>
+            <p class="my-4">The barn house captivates with its blend of rustic charm and<br> modern sophistication,
+              featuring weathered
+              wood, sleek metal accents.</p>
+
+            <!-- more details -->
+            <!-- 1 -->
+            <div class="row-auto">
+              <div class="flex items-center px-18 py-4 rounded-xl bg-base-100 w-96 shadow-xl">
+                <div class="items-center">
+                  <img class="mx-2" src="./assets/commercial.png" alt="commercial building" />
+                </div>
+                <div class="mx-4">
+                  <h2 class="font-bold">Commercial</h2>
+                  <p class="s_color">The burn house captivates with its blend of rustic charm and modern.
+                  </p>
+                </div>
               </div>
-              <div class="navbar-end">
-                <button
-                    class="px-2 py-2 mx-2 rounded-full font-medium bg-neutral-200"><svg
-                        xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6 text-black inline">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
-                  </button>
-                <button
-                    class="px-2 py-2 mx-2 rounded-full font-medium bg-neutral-200"><svg
-                        xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6 text-black inline">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                  </button>
-                
-                <div><a class="btn bg-btn-bg-color text-black font-bold">Book Consult<i class="fa-solid fa-arrow-right -rotate-45"></i></a></div>
+              <!-- 2 -->
+              <div class="my-6 flex items-center px-18 py-4 rounded-xl bg-base-100 w-96 shadow-xl">
+                <div class="items-center">
+                  <img class="mx-2" src="./assets/commercial.png" alt="commercial building" />
+                </div>
+                <div class="mx-4">
+                  <h2 class="font-bold">Residential</h2>
+                  <p class="s_color">The burn house captivates with its blend of rustic charm and modern.
+                  </p>
+                </div>
               </div>
             </div>
-          </nav> 
+          </div>
+          <div class="relative -top-20 -right-6">
+            <img src="./assets/Rectangle.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Work process section -->
+  <section class="my-24">
+    <div>
+      <div class="mt-16 ml-14 mb-4 text-center"><a class="btn bg-white text-black rounded-3xl"><i
+            class="fa-solid fa-arrow-right"></i>How we works!</a>
+      </div>
+    </div>
+    <h3 class="text-3xl text-center">Our work process</h3>
+    <p class="text-center">The burn house captivates with its blend of rustic charm and modern.</p>
+    <!-- cards -->
+    <div class="m-12 grid  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- 1 -->
+      <div>
+        <div class="card card-bottom bg-rose-200 shadow-xl">
+          <figure>
+            <img class="" src="./assets/concept.png" alt="Movie" />
+          </figure>
+          <div class="card-body ">
+            <h2 class="card-title">Concept</h2>
+            <p>The burn house captivates with its blend of rustic charm and modern.</p>
 
-          <!-- main section -->
-           <main class="md:container mx-auto">
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div>
+        <div class="card card-bottom bg-yellow-300 shadow-xl">
+          <figure>
+            <img class="ml-4" src="./assets/flow-chart.png" alt="Movie" />
+          </figure>
+          <div class="card-body ">
+            <h2 class="card-title">Design Process</h2>
+            <p>The burn house captivates with its blend of rustic charm and modern.</p>
 
-           </main>
-     </header>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div>
+        <div class="card card-bottom bg-green-400 shadow-xl">
+          <figure>
+            <img class="ml-4" src="./assets/vision.png" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Super Vision</h2>
+            <p>The burn house captivates with its blend of rustic charm and modern.</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div>
+        <div class="card card-bottom bg-sky-500 shadow-xl">
+          <figure>
+            <img class="ml-4" src="./assets/budget-planning.png" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Budget Planning</h2>
+            <p>The burn house captivates with its blend of rustic charm and modern.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
