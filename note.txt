@@ -1,57 +1,7 @@
-<section class="w-screen grid justify-center items-center bg-slate-100">
-    <!-- 1 -->
-    <div class="">
-      <div class="mt-16 ml-20 mb-4"><a class="btn bg-white text-black rounded-3xl"><i class="fa-solid fa-arrow-right"></i>How we works!</a>
-      </div>
-      <div>
-        <h1 class="text-5xl font-bold">Our Works Process</h1>
-            <p class="my-4">The barn house captivates with its blend of rustic charm and<br> modern sophistication,
-              featuring weathered
-              wood, sleek metal accents.</p>
-      </div>
-    </div>
-    <!-- 2 -->
-     <!-- card 1 -->
-    <div class="grid-rows-4">
-      <!-- card 1 -->
-      <div class="bg-rose-300 rounded-xl">
-        <div class="mx-2 pt-6 pl-6">
-          <img src="./assets/concept.png" alt="">
-        </div>
-        <div class="mx-2 pl-6">
-          <h3 class="font-bold text-2xl">Concept</h3>
-          <p>The barn house captivates <br>with its blend of rustic charm <br>and modern</p>
+<div class="col-span-2 flex gap-2">
+        <img src="./assets" alt="">
+        <div>
+          <h3 class="font-bold text-2xl">Commercial</h3>
+          <p>The barn house captivates with its blend of rustic charm and modern, The barn house captivates with its blend of rustic charm and modern</p>
         </div>
       </div>
-      <!-- card 1 -->
-      <div class="bg-rose-300 rounded-xl">
-        <div class="mx-2 pt-6 pl-6">
-          <img src="./assets/concept.png" alt="">
-        </div>
-        <div class="mx-2 pl-6">
-          <h3 class="font-bold text-2xl">Concept</h3>
-          <p>The barn house captivates <br>with its blend of rustic charm <br>and modern</p>
-        </div>
-      </div>
-      <!-- card 1 -->
-      <div class="bg-rose-300 rounded-xl">
-        <div class="mx-2 pt-6 pl-6">
-          <img src="./assets/concept.png" alt="">
-        </div>
-        <div class="mx-2 pl-6">
-          <h3 class="font-bold text-2xl">Concept</h3>
-          <p>The barn house captivates <br>with its blend of rustic charm <br>and modern</p>
-        </div>
-      </div>
-      <!-- card 1 -->
-      <div class="bg-rose-300 rounded-xl">
-        <div class="mx-2 pt-6 pl-6">
-          <img src="./assets/concept.png" alt="">
-        </div>
-        <div class="mx-2 pl-6">
-          <h3 class="font-bold text-2xl">Concept</h3>
-          <p>The barn house captivates <br>with its blend of rustic charm <br>and modern</p>
-        </div>
-      </div>
-    </div>
-   </section>
