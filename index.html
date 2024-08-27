@@ -13,10 +13,8 @@
 
   <!-- font : google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
   <!-- DaisyUI and Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -112,8 +110,9 @@
           <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication,
             featuring weathered
             wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
-          <button class="btn bg-green-400 text-black font-bold">View Details<i
-              class="fa-solid fa-arrow-right -rotate-45 bg-btn-bg-color px-1 py-1 mx-2 rounded-full"></i></button>
+          
+              <div class="text-center justify-center pt-6 pb-10 "><a class="btn bg-btn-bg-color text-black font-bold rounded-2xl ">View Details<i
+                class="fa-solid fa-arrow-right -rotate-45 bg-lime-600 px-1.5 py-1.5 mx-2 rounded-full"></i></a></div>
         </div>
       </div>
     </main>
@@ -280,8 +279,8 @@
   </section>
 
   <!-- Input box -->
-  <section class="mx-auto">
-    <div class=" bg-[url('/bg.jpg')] w-full h-screen bg-no-repeat bg-center bg-cover">
+  <section class="md:container mx-auto">
+    <div class=" bg-[url('/bg.jpg')] w-full h-[720px] bg-no-repeat bg-center bg-cover">
       <div class="pt-16">
         <div class="mt-50 ml-50 mb-4 text-center"><a class="btn bg-lime-50 text-black rounded-3xl"><i
               class="fa-solid fa-arrow-right"></i>Let's connect</a>
@@ -306,10 +305,29 @@
       </div>
   </section>
 
-  <footer class="bg-black text-[s_color]">
+  <footer class="md:container mx-auto bg-black text-[#737373]">
     <div>
-      <div></div>
-      <div></div>
+      <div>
+        <div class="w-40/6 mt-16 ml-10 mb-4 font-bold text-3xl text-center"><a class="btn btn-ghost text-2xl p-16 text-white rounded-3xl"><i
+          class="fa-solid fa-arrow-right bg-lime-500  text-black px-2 py-2 rounded-full -rotate-45"></i>Rinterio</a>
+        </div>
+        <p class="text-center mt-3">The barn house captivates with its blend of rustic charm and modern
+          sophistication,<br>
+          featuring weathered
+          wood, sleek metal accents.</p>
+      </div>
+      <div class="lg:flex text-center justify-center text-slate-400 pt-6 ">
+        <ul class="menu menu-horizontal px-1 text-xl space-x-10">
+          <li><a>Home</a></li>
+          <li><a>Service</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="text-center justify-center pt-6 pb-10 "><a class="btn bg-btn-bg-color text-black font-bold rounded-2xl ">Book Consult<i
+        class="fa-solid fa-arrow-right -rotate-45"></i></a></div>
     </div>
   </footer>
 </body>
